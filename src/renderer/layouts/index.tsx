@@ -3,7 +3,7 @@ import { HashRouter, NavLink } from 'react-router-dom'
 import useInterval from '@use-it/interval'
 // import _ from 'lodash'
 
-import Router from './router'
+import Router from '../routes/router'
 
 import './style.less'
 
