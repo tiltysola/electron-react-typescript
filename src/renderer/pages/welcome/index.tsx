@@ -6,7 +6,7 @@ import './style.less'
 const Welcome = () => {
   return (
     <div id="welcome">
-      <h1 className="title">Electron RT Script</h1>
+      <h1 className="title">Electron RT Boilerplate</h1>
       <span>This is a template for electron + react + typescript.</span>
       <div className="links">
         <p>
