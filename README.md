@@ -40,6 +40,9 @@ yarn dist
 
 ## 其他说明
 
+#### 修改窗口标题
+打开 `electron-webpack.json` 将 `true` 改为 `"You App Name"` 即可
+
 #### 末尾强制以分号结尾（阿里规则）
 删除 `.eslintrc.js` 中的下列代码即可
 ```
@@ -47,6 +50,9 @@ rules: {
   '@typescript-eslint/semi': [2, 'never']
 },
 ```
+
+#### 自定义 Webpack 设定
+请参考[这个文档](https://webpack.electron.build/modifying-webpack-configurations)
 
 #### 使用到的主要依赖
 
