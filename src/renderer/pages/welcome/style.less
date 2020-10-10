@@ -1,0 +1,37 @@
+@gray: rgb(72, 82, 92);
+@youmuGreen: rgb(47, 128, 55);
+@youmuHoverGreen: rgb(47, 168, 55);
+
+#welcome {
+  text-align: center;
+  color: @gray;
+  .title {
+    margin: 64px 0 12px 0;
+    font-size: 22px;
+  }
+  .links {
+    display: table;
+    margin: 20px 10%;
+    width: 80%;
+    p {
+      display: table-row;
+      width: 100%;
+      a {
+        display: table-cell;
+        width: 50%;
+        padding: 4px 12px;
+        color: @youmuGreen;
+        text-decoration: none;
+        &:first-child {
+          text-align: right;
+        }
+        &:last-child {
+          text-align: left;
+        }
+        &:hover {
+          color: @youmuHoverGreen
+        }
+      }
+    }
+  }
+}
