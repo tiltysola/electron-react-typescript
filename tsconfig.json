@@ -13,6 +13,10 @@
     "experimentalDecorators": true,
     "newLine": "lf",
     "noEmitOnError": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "common/*": ["./common/*"]
+    }
   }
 }
