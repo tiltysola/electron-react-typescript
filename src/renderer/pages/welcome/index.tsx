@@ -1,5 +1,5 @@
 import React from 'react'
-import { openExternal } from 'common/util'
+import { openExternal } from 'common/utils'
 
 import './style.less'
 
