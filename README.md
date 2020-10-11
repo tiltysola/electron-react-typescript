@@ -4,6 +4,10 @@
 > 一个开源的 Electron 开发环境脚手架，使用了 Electron + React + Typescript + Less + Webpack进行构建。  
 > 代码检查使用了 Eslint ，规则集采用的是 eslint-config-ali ，强制删除不必要的分号。
 
+## 界面预览
+
+<img src=".github/electronrt.png" width="80%">
+
 ## 食用方法
 
 ### 克隆代码

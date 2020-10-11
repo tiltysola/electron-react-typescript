@@ -1,19 +1,54 @@
-@youmuGreen: rgb(47, 128, 55);
-
 #layout {
-  .layout-header, .layout-footer {
-    background-color: rgb(233, 233, 233);
-  }
   .layout-content {
     min-height: calc(100vh - 58px);
   }
   .layout-header {
-    .slg {
-      margin-left: 4px;
+    position: relative;
+    height: 30px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    -webkit-app-region: drag;
+    .title {
+      display: inline-block;
+      margin: 0 8px;
       font-size: 13px;
+      line-height: 30px;
+    }
+    .slg {
+      display: inline-block;
+      font-size: 10px;
+      color: rgb(122, 122, 122);
+      line-height: 30px;
+    }
+    .control {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 30px;
+      -webkit-app-region: no-drag;
+      ul {
+        margin: 0;
+        height: 30px;
+        li {
+          display: inline-block;
+          list-style: none;
+          line-height: 30px;
+          &.close {
+            padding: 4px 6px;
+            path {
+              fill: rgb(216, 216, 216);
+            }
+            &:hover {
+              background-color: rgb(213, 81, 45);
+            }
+          }
+        }
+      }
     }
   }
   .layout-footer {
+    position: absolute;
+    bottom: 0;
     .nav {
       margin-left: 8px;
       a {
@@ -21,7 +56,7 @@
         font-size: 14px;
         padding: 2px;
         margin: 6px;
-        color: @youmuGreen;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         &.active {
           text-decoration: underline;
