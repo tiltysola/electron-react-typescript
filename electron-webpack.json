@@ -1,4 +1,4 @@
 {
-  "title": true,
+  "title": "Electron RT Boilerplate",
   "whiteListedModules": ["react-router-dom"]
 }

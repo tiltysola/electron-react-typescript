@@ -1,3 +1,5 @@
+![Electron](.github/electron.svg) ![React](.github/react.svg)
+
 # Electron RT Boilerplate
 > 一个开源的 Electron 开发环境脚手架，使用了 Electron + React + Typescript + Less + Webpack进行构建。  
 > 代码检查使用了 Eslint ，规则集采用的是 eslint-config-ali ，强制删除不必要的分号。
@@ -41,7 +43,7 @@ yarn dist
 ## 其他说明
 
 #### 修改窗口标题
-打开 `electron-webpack.json` 将 `true` 改为 `"You App Name"` 即可
+打开 `electron-webpack.json` 将 `Electron RT Boilerplate` 改为 `"You App Name"` 即可
 
 #### 末尾强制以分号结尾（阿里规则）
 删除 `.eslintrc.js` 中的下列代码即可
