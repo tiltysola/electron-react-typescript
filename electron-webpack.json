@@ -1,3 +1,4 @@
 {
-  "title": true
+  "title": true,
+  "whiteListedModules": ["react-router-dom"]
 }
