@@ -1,4 +1,10 @@
 {
   "title": "Electron RT Boilerplate",
-  "whiteListedModules": ["react-router-dom"]
+  "whiteListedModules": ["react-router-dom"],
+  "main": {
+    "webpackConfig": "webpack.eslint.additions.js"
+  },
+  "renderer": {
+    "webpackConfig": "webpack.eslint.additions.js"
+  }
 }

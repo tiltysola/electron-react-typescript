@@ -1,7 +1,7 @@
-import React from 'react'
-import { openExternal } from 'common/utils'
+import React from 'react';
+import { openExternal } from 'common/utils';
 
-import './style.less'
+import './style.less';
 
 const About = () => {
   return (
@@ -9,9 +9,9 @@ const About = () => {
       <h1 className="title">Electron RT Boilerplate</h1>
       <span>It seems you entered the about page.</span>
       <p>Author: YoumuKonpaku</p>
-      <p>Website: <a className="link" href="#" onClick={() => { openExternal('https://youmukonpaku.com') }}>https://youmukonpaku.com</a></p>
+      <p>Website: <a className="link" href="#" onClick={() => { openExternal('https://youmukonpaku.com'); }}>https://youmukonpaku.com</a></p>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

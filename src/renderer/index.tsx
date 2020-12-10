@@ -1,11 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
-import Layout from './layouts'
+import Layout from './layouts';
 
-import './style.less'
+import './style.less';
 
 ReactDOM.render(
-  <Layout />,
+  <HashRouter>
+    <Route path="/" component={Layout} />
+  </HashRouter>,
   document.getElementById('app'),
-)
+);

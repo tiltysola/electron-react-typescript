@@ -1,3 +1,3 @@
-import { openExternal } from './openExternal'
+import { openExternal } from './openExternal';
 
-export { openExternal }
+export { openExternal };

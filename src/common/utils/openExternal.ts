@@ -1,5 +1,5 @@
-import { shell } from 'electron'
+import { shell } from 'electron';
 
 export const openExternal = (url: string) => {
-  shell.openExternal(url)
-}
+  shell.openExternal(url);
+};

@@ -1,16 +1,13 @@
 module.exports = {
   extends: 'eslint-config-ali/typescript/react',
   parserOptions: {
-    sourceType: 'module'
-  },
-  rules: {
-    '@typescript-eslint/semi': [2, 'never']
+    sourceType: 'module',
   },
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   globals: {
-    __static: true
-  }
+    __static: true,
+  },
 }

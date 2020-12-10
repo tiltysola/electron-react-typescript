@@ -1,7 +1,7 @@
-import React from 'react'
-import { openExternal } from 'common/utils'
+import React from 'react';
+import { openExternal } from 'common/utils';
 
-import './style.less'
+import './style.less';
 
 const Welcome = () => {
   return (
@@ -10,24 +10,24 @@ const Welcome = () => {
       <span>This is a template for electron + react + typescript.</span>
       <div className="links">
         <p>
-          <a href="#" onClick={() => { openExternal('https://www.electronjs.org/') }}>Electron</a> |
-          <a href="#" onClick={() => { openExternal('https://webpack.electron.build/') }}>Electron-Webpack</a>
+          <a href="#" onClick={() => { openExternal('https://www.electronjs.org/'); }}>Electron</a> |
+          <a href="#" onClick={() => { openExternal('https://webpack.electron.build/'); }}>Electron-Webpack</a>
         </p>
         <p>
-          <a href="#" onClick={() => { openExternal('https://react.docschina.org/') }}>React</a> |
-          <a href="#" onClick={() => { openExternal('https://reactrouter.com/') }}>React-Router</a>
+          <a href="#" onClick={() => { openExternal('https://react.docschina.org/'); }}>React</a> |
+          <a href="#" onClick={() => { openExternal('https://reactrouter.com/'); }}>React-Router</a>
         </p>
         <p>
-          <a href="#" onClick={() => { openExternal('https://www.typescriptlang.org/') }}>Typescript</a> |
-          <a onClick={() => { openExternal('http://lesscss.org/') }}>Less</a>
+          <a href="#" onClick={() => { openExternal('https://www.typescriptlang.org/'); }}>Typescript</a> |
+          <a onClick={() => { openExternal('http://lesscss.org/'); }}>Less</a>
         </p>
         <p>
-          <a href="#" onClick={() => { openExternal('https://eslint.org/') }}>Eslint</a> |
-          <a href="#" onClick={() => { openExternal('https://www.npmjs.com/package/eslint-config-ali') }}>Eslint-Config-Ali</a>
+          <a href="#" onClick={() => { openExternal('https://eslint.org/'); }}>Eslint</a> |
+          <a href="#" onClick={() => { openExternal('https://www.npmjs.com/package/eslint-config-ali'); }}>Eslint-Config-Ali</a>
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Welcome
+export default Welcome;

@@ -1,8 +1,8 @@
-import React from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import React from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
-import Welcome from '../pages/welcome'
-import About from '../pages/about'
+import Welcome from '../pages/welcome';
+import About from '../pages/about';
 
 const Router = () => {
   return (
@@ -11,7 +11,7 @@ const Router = () => {
       <Route path="/welcome" component={Welcome} exact />
       <Route path="/about" component={About} exact />
     </Switch>
-  )
-}
+  );
+};
 
-export default Router
+export default Router;
