@@ -1,24 +1,13 @@
 import React from 'react';
 import { HashRouter, NavLink, useLocation } from 'react-router-dom';
-import { remote } from 'electron';
+import { close } from '../../common/utils/index';
 
 import Router from '../routes/router';
 
 import './style.less';
 
-// const isDev = process.env.NODE_ENV !== 'production'
-const winContent = remote.getCurrentWindow();
-
 const Index = () => {
   const location = useLocation();
-
-  const close = () => {
-    // if (isDev) {
-    //   winContent.destroy()
-    // } else {
-    winContent.close();
-    // }
-  };
 
   return (
     <HashRouter>
