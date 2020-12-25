@@ -1,8 +1,8 @@
 import React from 'react';
 import { HashRouter, NavLink, useLocation } from 'react-router-dom';
-import { close } from '../../common/utils/index';
+import { close } from 'common/utils/index';
 
-import Router from '../routes/router';
+import Router from 'renderer/routes/router';
 
 import './style.less';
 

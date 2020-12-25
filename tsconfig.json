@@ -16,7 +16,10 @@
     "jsx": "react",
     "baseUrl": "./src",
     "paths": {
-      "common/*": ["./common/*"]
+      "main/*": ["./main/*"],
+      "renderer/*": ["./renderer/*"],
+      "common/*": ["./common/*"],
+      "static/*": ["./static/*"]
     }
   }
 }
