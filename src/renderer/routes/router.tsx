@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import Welcome from '../pages/welcome';
-import About from '../pages/about';
+import Welcome from 'renderer/pages/welcome';
+import About from 'renderer/pages/about';
 
 const Router = () => {
   return (
