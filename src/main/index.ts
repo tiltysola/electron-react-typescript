@@ -2,12 +2,23 @@ import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 import { format as formatUrl } from 'url';
 
-const isDevelopment = process.env.NODE_ENV !== 'production';
+import { isDevelopment, createWindow, WindowProps } from './utils';
 
-let mainWindow: BrowserWindow | null;
-
-function createMainWindow() {
-  const window = new BrowserWindow({
+// 申明主渲染窗口
+let mainWindow: BrowserWindow | null = null;
+let url: string | null = null;
+if (isDevelopment) {
+  url = `http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`;
+} else {
+  url = formatUrl({
+    pathname: path.join(__dirname, 'index.html'),
+    protocol: 'file',
+    slashes: true,
+  });
+}
+const mainWindowOptions: WindowProps = {
+  url,
+  options: {
     width: 600,
     height: 480,
     frame: false,
@@ -15,52 +26,28 @@ function createMainWindow() {
       nodeIntegration: true,
       enableRemoteModule: true,
     },
-  });
-
-  if (isDevelopment) {
-    window.webContents.openDevTools();
-  }
-
-  if (isDevelopment) {
-    window.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`);
-  } else {
-    window.loadURL(formatUrl({
-      pathname: path.join(__dirname, 'index.html'),
-      protocol: 'file',
-      slashes: true,
-    }));
-  }
-
-  window.on('closed', () => {
+  },
+  closed: () => {
     mainWindow = null;
-  });
+  },
+};
 
-  window.webContents.on('devtools-opened', () => {
-    window.focus();
-    setImmediate(() => {
-      window.focus();
-    });
-  });
-
-  return window;
-}
-
-// quit application when all windows are closed
+// 当所有窗口关闭后退出程序
 app.on('window-all-closed', () => {
-  // on macOS it is common for applications to stay open until the user explicitly quits
+  // 对于macOS用户来说，点击关闭并不意味着退出程序，而是在托盘休眠
   if (process.platform !== 'darwin') {
     app.quit();
   }
 });
 
 app.on('activate', () => {
-  // on macOS it is common to re-create a window even after all windows have been closed
+  // 对于macOS用户来说，当所有窗口关闭后，应该创建一个新的窗口
   if (mainWindow === null) {
-    mainWindow = createMainWindow();
+    mainWindow = createWindow(mainWindowOptions);
   }
 });
 
-// create main BrowserWindow when electron is ready
+// 当Electron准备完毕后创建主窗口
 app.on('ready', () => {
-  mainWindow = createMainWindow();
+  mainWindow = createWindow(mainWindowOptions);
 });

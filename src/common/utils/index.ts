@@ -1,4 +1,2 @@
-import { openExternal } from './openExternal';
-import { close } from './winContent';
-
-export { openExternal, close };
+export * from './winContent';
+export * from './openExternal';

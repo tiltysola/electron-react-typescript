@@ -19,7 +19,7 @@ const Welcome = () => {
         </p>
         <p>
           <a href="#" onClick={() => { openExternal('https://www.typescriptlang.org/'); }}>Typescript</a> |
-          <a onClick={() => { openExternal('http://lesscss.org/'); }}>Less</a>
+          <a href="#" onClick={() => { openExternal('http://lesscss.org/'); }}>Less</a>
         </p>
         <p>
           <a href="#" onClick={() => { openExternal('https://eslint.org/'); }}>Eslint</a> |
