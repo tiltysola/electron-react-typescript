@@ -13,7 +13,7 @@
 ### 克隆代码
 
 ```
-git clone git@github.com:AlishaHawkward/electron-react-typescript.git
+git clone git@github.com:AlishaHawkward/electron-react-typescript.git --depth=1
 ```
 
 ### 安装运行环境
