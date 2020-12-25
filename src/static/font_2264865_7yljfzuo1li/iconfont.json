@@ -1,0 +1,23 @@
+{
+  "id": "2264865",
+  "name": "hnfy",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18406206",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "18406220",
+      "name": "minus",
+      "font_class": "minus",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    }
+  ]
+}

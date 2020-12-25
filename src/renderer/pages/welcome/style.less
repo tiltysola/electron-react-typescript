@@ -2,12 +2,16 @@
   text-align: center;
   color: rgb(233, 233, 233);
   .title {
-    margin: 64px 0 24px 0;
+    margin: 42px 0 24px 0;
     font-size: 22px;
+  }
+  .desc {
+    display: inline-block;
+    margin-bottom: 42px;
   }
   .links {
     display: table;
-    margin: 20px 10%;
+    margin: 24px 10%;
     width: 80%;
     p {
       display: table-row;
@@ -16,7 +20,7 @@
         display: table-cell;
         width: 50%;
         padding: 4px 12px;
-        color:  rgba(72, 72, 196);
+        color:  #42b983;
         text-decoration: none;
         &:first-child {
           text-align: right;
@@ -25,8 +29,19 @@
           text-align: left;
         }
         &:hover {
-          color: rgba(92, 92, 216);
+          color: #67c799;
         }
+      }
+    }
+  }
+  .footer {
+    display: inline-block;
+    margin-top: 36px;
+    a {
+      color:  #42b983;
+      text-decoration: none;
+      &:hover {
+        color: #67c799;
       }
     }
   }

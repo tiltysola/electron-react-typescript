@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
     <div id="welcome">
       <h1 className="title">Electron RT Boilerplate</h1>
-      <span>This is a template for electron + react + typescript.</span>
+      <span className="desc">This is a template for electron + react + typescript.</span>
       <div className="links">
         <p>
           <a href="#" onClick={() => { openExternal('https://www.electronjs.org/'); }}>Electron</a> |
@@ -26,6 +26,7 @@ const Welcome = () => {
           <a href="#" onClick={() => { openExternal('https://www.npmjs.com/package/eslint-config-ali'); }}>Eslint-Config-Ali</a>
         </p>
       </div>
+      <p className="footer"><a className="link" href="#" onClick={() => { openExternal('https://youmukonpaku.com'); }}>YoumuKonpaku</a></p>
     </div>
   );
 };

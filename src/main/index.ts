@@ -20,7 +20,7 @@ const mainWindowOptions: WindowProps = {
   url,
   options: {
     width: 600,
-    height: 480,
+    height: 412,
     frame: false,
     webPreferences: {
       nodeIntegration: true,

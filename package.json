@@ -1,6 +1,6 @@
 {
   "name": "electron-react-typescript",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "start": "npm install && npm run dev",
