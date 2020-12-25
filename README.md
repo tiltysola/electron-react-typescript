@@ -8,7 +8,7 @@
 
 <img src=".github/electronrt.png" width="80%">
 
-## 食用方法
+## 构建说明
 
 ### 克隆代码
 
@@ -19,49 +19,54 @@ git clone git@github.com:AlishaHawkward/electron-react-typescript.git
 ### 安装运行环境
 
 ```
-// with npm installed
+// 使用npm
 npm install
 
-// or with yarn installed
+// 使用yarn
 yarn
 ```
 
 ### 运行调试
 ```
-// with npm installed
+// 使用npm
 npm run dev
 
-// or with yarn installed
+// 使用yarn
 yarn dev
 ```
 
 ### 构建可执行文件
 ```
-// with npm installed
+// 使用npm
 npm run dist
 
-// or with yarn installed
+// 使用yarn
 yarn dist
 ```
 
-## 其他说明
+## 目录说明
++ `src/common` 通用逻辑处理目录 
++ `src/main` 主进程目录
++ `src/renderer` 渲染进程目录
++ + `src/renderer/components` 组件目录
++ + `src/renderer/pages` 页面目录
++ + `src/renderer/routes` 路由目录
++ `src/static` 静态资源目录
+
+## 使用方法
+
+#### 修改窗口大小
+打开 `src/main/index.ts` 将 `width: 600, height: 480,` 改为自定义值即可
 
 #### 修改窗口标题
 打开 `electron-webpack.json` 将 `Electron RT Boilerplate` 改为 `"You App Name"` 即可
-
-#### 末尾强制以分号结尾（阿里规则）
-删除 `.eslintrc.js` 中的下列代码即可
-```
-rules: {
-  '@typescript-eslint/semi': [2, 'never']
-},
-```
 
 #### 自定义 Webpack 设定
 请参考[这个文档](https://webpack.electron.build/modifying-webpack-configurations)
 
 #### 使用到的主要依赖
 
++ [Electron](https://electronjs.org/)
 + [Electron-Webpack](https://webpack.electron.build/)
 + [React](https://react.docschina.org/)
 + [Typescript](https://www.typescriptlang.org/)
