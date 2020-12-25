@@ -48,9 +48,6 @@ yarn dist
 + `src/common` 通用逻辑处理目录 
 + `src/main` 主进程目录
 + `src/renderer` 渲染进程目录
-+ + `src/renderer/components` 组件目录
-+ + `src/renderer/pages` 页面目录
-+ + `src/renderer/routes` 路由目录
 + `src/static` 静态资源目录
 
 ## 使用方法
